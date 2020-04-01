@@ -35,7 +35,6 @@ class Testcalc:
     def test_sub(self):
         assert self.calc.sub(-1, -2) == -3
 
-    def test_sub(self):
-        assert self.calc.sub(3, 2) == 1
+
 
 
