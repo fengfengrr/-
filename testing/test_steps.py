@@ -5,7 +5,7 @@ import yaml
 
 def steps_data():
     with open('test_steps.yaml') as i:
-        return yaml.load(i)
+        return yaml.load(i) #导入方法
 
 
 class Test_calc:
@@ -15,7 +15,7 @@ class Test_calc:
         cls.calc = Calc()
 
     with open('test_data.yaml') as f:
-        data = yaml.load(f)
+        data = yaml.load(f)#导入测试数据
 
     @pytest.mark.parametrize('a,b,c', data)
     def test_step(self, a, b, c):

@@ -7,7 +7,7 @@ import pytest
 import  yaml
 
 def data():
-    with open('test_data_data.yaml') as f:
+    with open('test_data.yaml') as f:
         return  yaml.load(f)
 class Test_calc:
     @classmethod
